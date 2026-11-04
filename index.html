@@ -1,28 +1,495 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prvni muceni</title>
-    <link rel="stylesheet" href="ilovevacky.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Paws | Chovatelská stanice</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-<section class="dan">
-    <div class="milujemejeffrehoepstiena">
-        <div class="top">Digital Designer / Pardubice</div>
+<nav class="navbar navbar-expand-lg navbar-light site-nav sticky-top">
+    <div class="container">
 
+        <a class="navbar-brand brand" href="home.html">
+            <span class="brand-paw">🐾</span>
+            <span>
+                <strong>Golden Paws</strong>
+                <small>Chovatelská stanice</small>
+            </span>
+        </a>
 
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainMenu"
+            aria-controls="mainMenu" aria-expanded="false"
+            aria-label="Otevřít navigaci">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#psi">Naše zvířata</a></li>
+                <li class="nav-item"><a class="nav-link" href="#stenata">Štěňata</a></li>
+                <li class="nav-item"><a class="nav-link" href="#plemeno">O plemeni &amp; Péče</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt &amp; Rezervace</a></li>
+            </ul>
+
+            <a href="#stenata" class="btn btn-forest nav-cta">
+                Dostupná mláďata
+            </a>
+        </div>
     </div>
+</nav>
 
+<header class="hero" id="domu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 hero-content">
+                <p class="eyebrow light">POZNEJTE NÁŠ CHOV</p>
+                <h1>Naše zvířata</h1>
+                <p class="hero-text">
+                    Poznejte naše chovné jedince. Pečlivě vybíráme
+                    zdravé, vyrovnané a povahově skvělé psy
+                    s kvalitním rodokmenem. Každý z nich je pro nás jedinečný.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#stenata" class="btn btn-forest">
+                        Dostupná mláďata →
+                    </a>
+                    <a href="#vyber" class="btn btn-outline-light rounded-pill px-4">
+                        Jak probíhá výběr?
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-    </section>
+<section class="why-section section-pad" id="vyber">
+    <div class="container">
+        <div class="row align-items-center g-4">
 
+            <div class="col-lg-4">
+                <h2 class="section-title">Proč náš chov?</h2>
+                <p class="section-copy">
+                    Věříme, že zdravý pes začíná u zodpovědného chovu.
+                    Dbáme na genetické testy, kvalitní péči, socializaci
+                    a láskyplné prostředí. Naše zvířata žijí s námi
+                    v domácím prostředí a mají dostatek pohybu,
+                    podnětů i lidské blízkosti.
+                </p>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="benefit">
+                    <span class="benefit-icon">♧</span>
+                    <h3>Zdraví na prvním místě</h3>
+                    <p>Genetické testy, pravidelné kontroly.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="benefit">
+                    <span class="benefit-icon">♡</span>
+                    <h3>Kvalitní péče</h3>
+                    <p>Domácí prostředí, individuální přístup.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="benefit">
+                    <span class="benefit-icon">♢</span>
+                    <h3>Čisté linie</h3>
+                    <p>Rodokmeny a ověřený původ.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="benefit">
+                    <span class="benefit-icon">☆</span>
+                    <h3>Zkušenosti</h3>
+                    <p>Více než 10 let v chovu.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="dogs-section section-pad" id="psi">
+    <div class="container">
+
+        <div class="section-header d-flex justify-content-between align-items-end gap-3">
+            <div>
+                <h2 class="section-title">Naši psi</h2>
+                <p class="section-copy mb-0">
+                    Chovné jedince vybíráme pečlivě podle zdravotních
+                    výsledků, povahy a exteriéru. Každý z nich má svůj příběh.
+                </p>
+            </div>
+            <a href="#kontakt" class="btn btn-outline-forest rounded-pill flex-shrink-0">
+                Zobrazit všechny →
+            </a>
+        </div>
+
+        <div class="row g-3 mt-2">
+
+            <div class="col-md-6 col-xl-3">
+                <article class="dog-card h-100">
+                    <img class="dog-photo"
+                        src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=85"
+                        alt="Zlatý retrívr Aiko" loading="lazy">
+
+                    <div class="dog-body">
+                        <h3>Aiko Od Zlatého lesa <span>♂</span></h3>
+                        <p class="dog-date">• 12. 3. 2021</p>
+                        <p class="dog-description">
+                            Klidný, přátelský a velmi učenlivý.
+                            Skvělý parťák do rodiny.
+                        </p>
+
+                        <ul class="dog-facts">
+                            <li><span>♧</span> DKK: A/A (12. 6. 2023)</li>
+                            <li><span>♧</span> DOV: negativní (12. 6. 2023)</li>
+                            <li><span>♜</span> Český šampion krásy (2023)</li>
+                            <li><span>⌁</span> Rodiče: Aiko × Luna</li>
+                        </ul>
+
+                        <div class="dog-actions">
+                            <a href="#dokumenty" class="btn btn-document">⇩ Rodokmen (PDF)</a>
+                            <a href="#kontakt" class="btn btn-forest btn-detail">Detail →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="dog-card h-100">
+                    <img class="dog-photo"
+                        src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?auto=format&fit=crop&w=700&q=85"
+                        alt="Fenka Bella" loading="lazy">
+
+                    <div class="dog-body">
+                        <h3>Bella z Rybníka <span>♀</span></h3>
+                        <p class="dog-date">• 8. 5. 2021</p>
+                        <p class="dog-description">
+                            Veselá, hravá a velmi společenská.
+                            Miluje lidi i ostatní psy.
+                        </p>
+
+                        <ul class="dog-facts">
+                            <li><span>♧</span> DKK: A/A (4. 3. 2023)</li>
+                            <li><span>♧</span> DOV: negativní (4. 3. 2023)</li>
+                            <li><span>♜</span> Výborná (ČKRR, 2023)</li>
+                            <li><span>⌁</span> Rodiče: Max × Bella</li>
+                        </ul>
+
+                        <div class="dog-actions">
+                            <a href="#dokumenty" class="btn btn-document">⇩ Rodokmen (PDF)</a>
+                            <a href="#kontakt" class="btn btn-forest btn-detail">Detail →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="dog-card h-100">
+                    <img class="dog-photo"
+                        src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=85"
+                        alt="Zlatý retrívr Charlie" loading="lazy">
+
+                    <div class="dog-body">
+                        <h3>Charlie Golden River <span>♂</span></h3>
+                        <p class="dog-date">• 20. 1. 2022</p>
+                        <p class="dog-description">
+                            Energický, chytrý a ochranitelský.
+                            Skvělý společník na výlety.
+                        </p>
+
+                        <ul class="dog-facts">
+                            <li><span>♧</span> DKK: A/A (14. 9. 2023)</li>
+                            <li><span>♧</span> DOV: negativní (14. 9. 2023)</li>
+                            <li><span>♜</span> Res. CAC (KV, 2024)</li>
+                            <li><span>⌁</span> Rodiče: Bailey × Luna</li>
+                        </ul>
+
+                        <div class="dog-actions">
+                            <a href="#dokumenty" class="btn btn-document">⇩ Rodokmen (PDF)</a>
+                            <a href="#kontakt" class="btn btn-forest btn-detail">Detail →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <article class="dog-card h-100">
+                    <img class="dog-photo"
+                        src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=700&q=85"
+                        alt="Fenka Daisy" loading="lazy">
+
+                    <div class="dog-body">
+                        <h3>Daisy z Lesní stráně <span>♀</span></h3>
+                        <p class="dog-date">• 15. 2. 2022</p>
+                        <p class="dog-description">
+                            Klidná, mazlivá a velmi vnímavá.
+                            Ideální do rodiny s dětmi.
+                        </p>
+
+                        <ul class="dog-facts">
+                            <li><span>♧</span> DKK: A/A (10. 8. 2023)</li>
+                            <li><span>♧</span> DOV: negativní (10. 8. 2023)</li>
+                            <li><span>♜</span> Junior šampion (2023)</li>
+                            <li><span>⌁</span> Rodiče: Max × Bella</li>
+                        </ul>
+
+                        <div class="dog-actions">
+                            <a href="#dokumenty" class="btn btn-document">⇩ Rodokmen (PDF)</a>
+                            <a href="#kontakt" class="btn btn-forest btn-detail">Detail →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section section-pad">
+    <div class="container">
+
+        <div class="section-header d-flex justify-content-between align-items-end gap-3">
+            <div>
+                <h2 class="section-title">Galerie ze života v naší stanici</h2>
+                <p class="section-copy mb-0">
+                    Podívejte se, jak u nás vyrůstají štěňata
+                    a jak vypadá každodenní život v chovatelské stanici.
+                </p>
+            </div>
+            <a href="#kontakt" class="btn btn-outline-forest rounded-pill flex-shrink-0">
+                Zobrazit celou galerii →
+            </a>
+        </div>
+
+        <div class="row g-2 mt-3">
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=400&q=80" alt="Pes odpočívá" loading="lazy">
+            </div>
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=400&q=80" alt="Psi si spolu hrají" loading="lazy">
+            </div>
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=80" alt="Portrét psa" loading="lazy">
+            </div>
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80" alt="Pes v domácím prostředí" loading="lazy">
+            </div>
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=400&q=80" alt="Zlatý retrívr venku" loading="lazy">
+            </div>
+            <div class="col-6 col-md-3 col-lg-1-5">
+                <img class="gallery-photo" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=400&q=80" alt="Pes v přírodě" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="credentials-section section-pad" id="dokumenty">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-4">
+                <h2 class="section-title">Naše certifikáty a členství</h2>
+                <p class="section-copy mb-0">
+                    Jsme hrdí na to, že splňujeme potřebné standardy
+                    a můžeme se opřít o ověřené organizace.
+                </p>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="credential">
+                    <span>♢</span>
+                    <div>
+                        <strong>Genetické testy</strong>
+                        <p>(VD, ED, PRA)</p>
+                        <small>12. 6. 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="credential">
+                    <span>▤</span>
+                    <div>
+                        <strong>ČMKU</strong>
+                        <p>Člen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="credential">
+                    <span>✺</span>
+                    <div>
+                        <strong>FCI</strong>
+                        <p>Mezinárodní kynologická organizace</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <div class="credential">
+                    <span>▧</span>
+                    <div>
+                        <strong>Osvědčení o chovu</strong>
+                        <p>Ke stažení (PDF)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section section-pad">
+    <div class="container">
+        <h2 class="section-title">Co o nás říkají naši majitelé</h2>
+        <p class="section-copy">Největší odměnou je pro nás spokojenost našich odchovů.</p>
+
+        <div class="row g-3 mt-2">
+
+            <div class="col-md-6">
+                <article class="review-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Ilustrační portrét majitelky" loading="lazy">
+                    <div>
+                        <strong>Veronika K.</strong>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            „Naše Bella je úžasná! Od první návštěvy
+                            jsme věděli, že jsme na správném místě.
+                            Profesionální přístup, krásné prostředí
+                            a milí lidé. Děkujeme!“
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6">
+                <article class="review-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Ilustrační portrét majitele" loading="lazy">
+                    <div>
+                        <strong>Petr S.</strong>
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            „Skvělá komunikace, ochota a opravdu
+                            zdravé štěně. Všechno proběhlo hladce
+                            a dodnes jsme v kontaktu. Doporučuji všemi!“
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="kontakt">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-4">
+                <h2>Máte dotaz?</h2>
+                <p>
+                    Rádi vám odpovíme na vše ohledně našich zvířat,
+                    mláďat i rezervací.
+                </p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="contact-detail">
+                    <span class="contact-icon">☎</span>
+                    <div>
+                        <strong>+420 777 123 456</strong>
+                        <small>Po–Ne 9:00–18:00</small>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <strong>info@goldenpaws.cz</strong>
+                        <small>Odpovídáme do 24 hodin</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <form class="contact-form" action="mailto:info@example.cz" method="post" enctype="text/plain">
+                    <div class="row g-2">
+                        <div class="col-sm-6">
+                            <label class="visually-hidden" for="jmeno">Vaše jméno</label>
+                            <input class="form-control" id="jmeno" name="Jméno" placeholder="Vaše jméno" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="visually-hidden" for="email">Váš e-mail</label>
+                            <input class="form-control" type="email" id="email" name="E-mail" placeholder="Váš e-mail" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="visually-hidden" for="zprava">Váš dotaz</label>
+                            <textarea class="form-control" id="zprava" name="Dotaz" rows="2" placeholder="Váš dotaz" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-forest w-100">
+                                Odeslat dotaz
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center gy-3">
+
+            <div class="col-md-3">
+                <a href="#domu" class="footer-brand">
+                    <span>🐾</span>
+                    <span><strong>Golden Paws</strong><small>Chovatelská stanice</small></span>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <div class="footer-links">
+                    <a href="#domu">Domů</a>
+                    <a href="#psi">Naše zvířata</a>
+                    <a href="#stenata">Štěňata</a>
+                    <a href="#plemeno">O plemeni & péče</a>
+                    <a href="#kontakt">Kontakt & rezervace</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-md-end">
+                <div class="social-links">
+                    <a href="#kontakt" aria-label="Instagram">◎</a>
+                    <a href="#kontakt" aria-label="Facebook">f</a>
+                    <a href="#kontakt" aria-label="YouTube">▶</a>
+                </div>
+                <small>© 2026 Golden Paws</small>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
-
-
 </html>
